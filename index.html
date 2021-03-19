@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, 
+    maximum-scale=1, user-scalable=no" >
+    <title>반응형 FLAT DESIGN</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcut icon" href="img/f_img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/f_img/flat-design-touch.png">
+    <script src="js/jquery.min.js"></script>
+
+
+    <style>
+        /* 모바일용 CSS */
+        /* 기본 CSS */
+        #wrap{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 80%;
+            margin:0 auto;
+            max-width: 1200px;
+        }
+
+        #wrap section{
+            box-sizing: border-box;
+            /* 박스 크기를 결정하는 방법을 변경하는 box-sizing: 속성값을
+            선과 패빙값을 너비값에 포함하는 border-box로 변경 */
+        }
+        
+        /* 태블릿용 CSS */
+        @media all and (min-width:768px){
+        /* 기본 CSS */
+        #wrap{
+            flex-flow: row wrap;
+            /* 태블릿 환경과 PC 환경에서 메인페이지의 구조를 보면 박스들이 가로로 여러줄 배치되어있다.
+            박스의 배치방향과 여러줄 배치를 한번에 설정하기 위해서 flex-flow 속성값을 
+            row wrap = 박스-가로배치 으로 설정한다. */
+        }
+    }
+        /* PC용 CSS */
+        @media all and (min-width:960px){
+        /* 기본 CSS */
+        #wrap{
+            position:relative;
+            /* 인포메이션영역이 놓일 위치의 기분을 결정하기 위해서 요소위치를 설정하기 위한 
+            position속성 값을 relative로 설정 */
+            width: 90%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+<img src="img/welcome.png"> <!-- 나중에 그림은 지우세요 -->
+    </div>
+</body>
+</html>
